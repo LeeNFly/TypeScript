@@ -9,6 +9,8 @@ count = 123
 let countInference = 456 // 鼠标放在countInference, 可以看到ts可以自动推断出countInference是number类型变量
 let nameInference = '刘英' // 鼠标放在nameInference, 可以看到ts可以自动推断出nameInference是string类型变量
 
+countInference = '' // ts对一个变量类型推断之后, 则该变量的静态类型就是类型推断出的类型, 不能赋予其他类型的值了
+
 // ts也可以推断出对象中的属性类型
 const XiaoJieJie = {
     name: '刘英',

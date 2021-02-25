@@ -6,6 +6,8 @@ let count: number = 1
 // 3. ts会提示变量所属的静态类型所可以使用的方法
 // count.toString() count是number类型变量, 可以使用number上的所有方法
 
+// PS: 静态类型只会约束值的类型
+
 // 二: 自定义静态类型
 interface XiaoJieJie {
     uname: string,

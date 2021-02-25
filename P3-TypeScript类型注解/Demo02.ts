@@ -44,3 +44,7 @@ function add2({one}: {one: number}): number {
 
 add2({one: 1})
 
+// 调用函数时, 传递的第一个参数必须是对象类型, 对象有且只能有1个属性one, 并且属性one的属性值类型为number, 第二个参数必须是number类型的对象
+function add3({one}: {one: number}, age: number): number {
+    return one
+}
