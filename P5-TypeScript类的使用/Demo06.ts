@@ -28,9 +28,25 @@
 
 // 静态属性
 // 基本用法和原理与JS ES6中class属性一样, 静态属性存在于类对象本身上, 而不存在于类实例身上, 可以直接通过类对象来访问
-// class Girl {
-//     static sayLove() {
-//       return "I Love you";
-//     }
-// }
-// console.log(Girl.sayLove());
+class Girl {
+    static age: number
+    private static _sex: string
+
+    static sayLove() {
+      return "I Love you";
+    }
+
+    static get sex() {
+        return this._sex
+    } 
+
+    static set sex(sex: string) {
+        this._sex = sex
+    }
+}
+console.log(Girl.sayLove());
+
+Girl.sex = '女'
+console.log(Girl.sex)
+
+

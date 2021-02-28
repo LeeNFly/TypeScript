@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- export语法需借助require.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.js"></script>
+    <script src="./build/build.js"></script>
+</head>
+<body>
+    <script>
+        // 比较麻烦, 后续可以借助webpack或者Parcel打包工具, 里面自带了兼容ES6 import 语法
+        require(["page"], function (page) {
+            new page.default();
+        });
+    </script>
+</body>
+</html>

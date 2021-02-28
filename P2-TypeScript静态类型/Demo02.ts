@@ -7,7 +7,7 @@ const flag: boolean = true
 const err: null = null
 const udf: undefined = undefined
 
-const variable: (number | string) = 1 // variable变量的值只能是number类型或string类型
+const variable: number | string = 1 // variable变量的值只能是number类型或string类型
 
 let v: string // 不管静态类型是什么, 只要是只声明且未赋值的变量, 值都是undefined
 
