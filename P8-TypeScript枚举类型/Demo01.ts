@@ -90,3 +90,5 @@ console.log(Status2.DABAOJIAN) // 哈哈
 // Status2.MESSAGE.AA = 3: 枚举类型后续不能再赋值, 只能在声明的时候就赋值
 // 反查 Status2[4] // SPA
 console.log(Status2['哈哈']) // undefined 一般来说, 枚举类型的值取数字即可
+
+// 不同枚举类型之间的key 和 value值可以一样, 同一个枚举类型里key值可以不一样, value值可以一样

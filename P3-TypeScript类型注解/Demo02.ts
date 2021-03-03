@@ -26,25 +26,30 @@ function forNever(): never {
 
 // 二. 函数的参数类型注解
 
-// 调用函数时, 传递的第一个实参和第二个实参值必须为number类型
+// 调用函数时, 必须且只能传递一个参数, 参数的类型为number类型
+function addOne(one: number): number {
+    return one
+}
+
+// 调用函数时, 必须且只能传递两个参数, 且第一个实参和第二个实参值必须为number类型
 function add(one: number, two: number): number {
     return one + two
 }
 
-// 调用函数时, 传递的参数必须是对象类型, 对象有且只能有2个属性one 和 two, 并且属性one的属性值类型为number, 属性two的属性值类型为number
+// 调用函数时, 必须且只能传递一个参数, 且参数必须是对象类型, 对象有且只能有2个属性one 和 two, 并且属性one的属性值类型为number, 属性two的属性值类型为number
 function add1({one, two}: {one: number, two: number}): number {
     return one + two
 }
 add1({one: 1, two: 1})
 
-// 调用函数时, 传递的参数必须是对象类型, 对象有且只能有1个属性one, 并且属性one的属性值类型为number
+// 调用函数时, 必须且只能传递一个参数, 且参数必须是对象类型, 对象有且只能有1个属性one, 并且属性one的属性值类型为number
 function add2({one}: {one: number}): number {
     return one
 }
 
 add2({one: 1})
 
-// 调用函数时, 传递的第一个参数必须是对象类型, 对象有且只能有1个属性one, 并且属性one的属性值类型为number, 第二个参数必须是number类型的对象
+// 调用函数时, 必须且只能传递两个参数, 且第一个参数必须是对象类型, 对象有且只能有1个属性one, 并且属性one的属性值类型为number, 第二个参数必须是number类型的对象
 function add3({one}: {one: number}, age: number): number {
     return one
 }

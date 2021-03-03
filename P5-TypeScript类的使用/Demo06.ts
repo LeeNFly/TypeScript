@@ -46,7 +46,8 @@ class Girl {
 }
 console.log(Girl.sayLove());
 
-Girl.sex = '女'
+// 静态属性也可以使用Setter和Setter方法
+Girl.sex = '女' 
 console.log(Girl.sex)
 
 

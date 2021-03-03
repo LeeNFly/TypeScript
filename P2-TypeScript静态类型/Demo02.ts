@@ -6,6 +6,7 @@ const myName: string = 'zs'
 const flag: boolean = true
 const err: null = null
 const udf: undefined = undefined
+const abc: any ={} // abc可以是任意类型数据, 五基本3复杂
 
 const variable: number | string = 1 // variable变量的值只能是number类型或string类型
 
@@ -22,6 +23,7 @@ const xiaoJieJie: {
 }
 // 2. 数组类型
 const xiaoJieJies: string [] = ['小姐姐', '小红', '小樱'] // 数组类型且数组的元素必须都是string
+const xiaoJieJies1: any [] = ['小姐姐', '小红', 1] // 数组类型且数组的元素可以是任意数据类型
 
 // 3. 类 类型
 class Person {}
