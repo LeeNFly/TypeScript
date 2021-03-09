@@ -1,3 +1,4 @@
+// ts数据类型和JS一样 5基本3复杂
 // 一. 静态类型 (Static Typing)
 // 1. 声明变量, 并指定该变量的静态类型
 let count: number = 1
